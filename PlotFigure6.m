@@ -3,7 +3,6 @@ load('Monkey2_Figure6.mat')
 
 imagecount=7;
 fulltimewindow=400;
-histogram_timewindow=[100:250];
 
 % Main PSTH graphs
 meanMLheadbody=mean(mean(MLheadbody,3),1);
@@ -38,4 +37,3 @@ transparent=1;
 mseb([1:fulltimewindow;1:fulltimewindow],[meanMLnoiseheadbody;meanMLnoiseheadonly],[semMLnoiseheadbody*ts(2);semMLnoiseheadonly*ts(2)],lineProps,transparent)
 set(gca,'linewidth',2)
 set(gca,'TickLength',[0 0])
-
